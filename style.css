@@ -87,3 +87,29 @@ footer{text-align:center;color:#7f8a8e;font-size:12px;padding:0 14px 40px}
  .info>div{flex-direction:column;gap:2px}
  .info dt{flex:none}
 }
+
+/* paged layout */
+.page{display:none}
+.page.on{display:block;animation:pg .25s ease}
+@keyframes pg{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+main{padding-bottom:90px}
+.nav a.cur{background:#c6b98f;color:#1b1a17;border-color:#c6b98f}
+.pager{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#0b0e0f;border-top:1px solid #2a3033}
+.pager button{min-width:96px;padding:9px 14px;background:#c6b98f;color:#1b1a17;border:0;border-radius:2px;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;cursor:pointer}
+.pager button:disabled{background:#2a3033;color:#68727a;cursor:default}
+.pager span{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#c9c5b4}
+.cover{padding-bottom:32px}
+.bigstamp{margin:30px 0 8px;display:inline-block;transform:rotate(-4deg);border:5px solid #a32222;color:#a32222;font-family:'Noto Serif KR',serif;font-weight:900;font-size:clamp(30px,8vw,56px);letter-spacing:.12em;padding:2px 20px;opacity:.85;mix-blend-mode:multiply}
+.covertitle{margin:6px 0 0;font-family:'Noto Serif KR',serif;font-weight:900;font-size:clamp(44px,12vw,84px);line-height:1.05;letter-spacing:-.02em}
+.cover .en{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#4a4430;margin-top:4px}
+.body{margin:0;word-break:keep-all}
+.role{margin-top:16px;background:#2b2618;color:#ece4c8;padding:14px 18px;display:flex;flex-direction:column;gap:2px}
+.role span{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#c6b98f}
+.role b{font-family:'Noto Serif KR',serif;font-size:20px}
+.idx{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.idx a{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit;background:#cfc6a9;border:1px solid #a89d7a;padding:8px}
+.idx img{width:64px;height:64px;object-fit:cover;object-position:center top;filter:saturate(.85) sepia(.08);flex:none}
+.idx b{display:block;font-family:'Noto Serif KR',serif;font-size:17px}
+.idx i{display:block;font-style:normal;font-size:12.5px;color:#4a4430}
+@media(max-width:720px){.idx{grid-template-columns:1fr}}
+.role b{word-break:keep-all}

@@ -10,10 +10,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="nav"><a href="#front">1면</a><a href="#marcus">마커스</a><a href="#elliot">엘리엇</a><a href="#tyler">타일러</a><a href="#wesley">웨슬리</a><a href="#others">기타</a></nav>
+<nav class="nav" id="tabs"><a href="#front">신문</a><a href="#secret">극비</a><a href="#marcus">마커스</a><a href="#elliot">엘리엇</a><a href="#tyler">타일러</a><a href="#wesley">웨슬리</a></nav>
 
 <main>
-<section class="paper" id="front">
+<section class="paper page" id="front">
   <div class="mast-meta"><span>제 2026-316호</span><span>2026년 11월 12일 목요일</span><span>내부 배포용</span></div>
   <h1 class="masthead">할로우 파인 크로니클</h1>
   <div class="mast-sub">THE HOLLOW PINE CHRONICLE · 노스캐롤라이나 캠프 할로우 파인</div>
@@ -39,8 +39,31 @@
   </div>
   <div class="thumbs"><h4>그레이라인 명단</h4><div class="tgrid"><a href="#marcus"><img src="images/marcus.jpg" alt="마커스 헤일"><span>마커스 헤일</span></a><a href="#elliot"><img src="images/elliot.jpg" alt="엘리엇 레예스"><span>엘리엇 레예스</span></a><a href="#tyler"><img src="images/tyler.jpg" alt="타일러 브룩스"><span>타일러 브룩스</span></a><a href="#wesley"><img src="images/wesley.jpg" alt="웨슬리 도일"><span>웨슬리 도일</span></a></div></div>
 </section>
+<section class="file page" id="secret">
+  <div class="tab">CASE FILE</div>
+  <div class="sheet cover">
+    <div class="topbar"><span>TOP SECRET // GRAYLINE // 열람 제한</span><span>CAMP HOLLOW PINE</span></div>
+    <div class="bigstamp">TOP SECRET</div>
+    <div class="no">CASE NO. GL-2026-04</div>
+    <h2 class="covertitle">그레이라인</h2>
+    <div class="en">TEAM FOUR · 이능특수전단 비공개 단독팀</div>
+    <dl class="info">
+      <div><dt>기지</dt><dd>노스캐롤라이나 외곽, 캠프 할로우 파인</dd></div>
+      <div><dt>시점</dt><dd>2026년, 미국</dd></div>
+      <div><dt>임무</dt><dd>균열체 토벌, 차단, 민간인 구출</dd></div>
+      <div><dt>대사 표기</dt><dd>영어 원문, 한국어 번역 병기</dd></div>
+    </dl>
+    <h3>팀의 사정</h3>
+    <p class="body">Team Four는 토벌 성과가 최상이다. 그러나 단독 출격이 잦고 닥치는 대로 부수고 돌아오는 탓에 피해와 사고 보고서가 끊이지 않아 부대의 골칫거리로 불린다. 팀원 전원은 가이딩을 거부하고 주사제와 임시억제제로만 버틴다. 부대는 이대로면 괴생명체를 잡기도 전에 팀이 안에서 무너진다고 판단했고, 한국군 가이드를 발령했다.</p>
+    <div class="role"><span>당신의 역할</span><b>가이드로 발령된 한국군 신입 하사</b></div>
+    <h3>열람 대상</h3>
+    <div class="idx"><a href="#marcus"><img src="images/marcus.jpg" alt="마커스 헤일"><span><b>마커스 헤일</b><i>소령 · 팀장 · S급 센티널</i></span></a><a href="#elliot"><img src="images/elliot.jpg" alt="엘리엇 레예스"><span><b>엘리엇 레예스</b><i>대위 · 부팀장 · A급 센티널</i></span></a><a href="#tyler"><img src="images/tyler.jpg" alt="타일러 브룩스"><span><b>타일러 브룩스</b><i>상사 · A급 센티널</i></span></a><a href="#wesley"><img src="images/wesley.jpg" alt="웨슬리 도일"><span><b>웨슬리 도일</b><i>중사 · 막내 · B급 센티널</i></span></a></div>
+    <h3>관련 인물</h3>
+    <div class="others"><div><b>월터 도슨</b><i>준장 · 특수전단 사령관 · 60세</i><p>무표정하고 공식적인 어조. 신입을 가이드로 발령한 결정자.</p></div><div><b>그레고리 보스</b><i>대령 · 정보참모 · 52세</i><p>팀 해체를 주장하며 사고 기록을 근거로 압박한다. 센터와 연줄이 있다.</p></div><div><b>새뮤얼 휘태커</b><i>군의관 · 대위 · 34세</i><p>과부하와 주사제 내성을 관리한다. 차분한 어조로 수치를 숨기지 않는다.</p></div></div>
+  </div>
+</section>
 
-<section class="file" id="marcus">
+<section class="file page" id="marcus">
   <div class="tab">FILE 01 / 04</div>
   <div class="sheet">
     <div class="topbar"><span>TOP SECRET // GRAYLINE // 열람 제한</span><span>CAMP HOLLOW PINE</span></div>
@@ -77,7 +100,7 @@
     <blockquote><span class="en">“Equipment at 0900. Don’t be late.”</span><span class="ko">장비 수령은 0900이다. 늦지 마라.</span></blockquote>
   </div>
 </section>
-<section class="file" id="elliot">
+<section class="file page" id="elliot">
   <div class="tab">FILE 02 / 04</div>
   <div class="sheet">
     <div class="topbar"><span>TOP SECRET // GRAYLINE // 열람 제한</span><span>CAMP HOLLOW PINE</span></div>
@@ -114,7 +137,7 @@
     <blockquote><span class="en">“Spell the name for the roster. Slowly.”</span><span class="ko">명단에 올릴 이름 철자를 불러. 천천히.</span></blockquote>
   </div>
 </section>
-<section class="file" id="tyler">
+<section class="file page" id="tyler">
   <div class="tab">FILE 03 / 04</div>
   <div class="sheet">
     <div class="topbar"><span>TOP SECRET // GRAYLINE // 열람 제한</span><span>CAMP HOLLOW PINE</span></div>
@@ -151,7 +174,7 @@
     <blockquote><span class="en">“Sounded like a hostage statement, Wes.”</span><span class="ko">인질 성명 같았어, 웨스.</span></blockquote>
   </div>
 </section>
-<section class="file" id="wesley">
+<section class="file page" id="wesley">
   <div class="tab">FILE 04 / 04</div>
   <div class="sheet">
     <div class="topbar"><span>TOP SECRET // GRAYLINE // 열람 제한</span><span>CAMP HOLLOW PINE</span></div>
@@ -188,14 +211,10 @@
     <blockquote><span class="en">“Welcome. I practiced the Korean greeting all night.”</span><span class="ko">환영합니다. 한국어 인사를 밤새 연습했어요.</span></blockquote>
   </div>
 </section>
-<section class="file" id="others">
-  <div class="sheet slim">
-    <div class="topbar"><span>관련 인물 · 열람 제한</span><span>CAMP HOLLOW PINE</span></div>
-    <h3>팀 밖의 사람들</h3>
-    <div class="others"><div><b>월터 도슨</b><i>준장 · 특수전단 사령관 · 60세</i><p>무표정하고 공식적인 어조. 신입을 가이드로 발령한 결정자.</p></div><div><b>그레고리 보스</b><i>대령 · 정보참모 · 52세</i><p>팀 해체를 주장하며 사고 기록을 근거로 압박한다. 센터와 연줄이 있다.</p></div><div><b>새뮤얼 휘태커</b><i>군의관 · 대위 · 34세</i><p>과부하와 주사제 내성을 관리한다. 차분한 어조로 수치를 숨기지 않는다.</p></div></div>
-  </div>
-</section>
+
 </main>
+<div class="pager"><button id="prev" type="button">◀ 이전</button><span id="count">1 / 6</span><button id="next" type="button">다음 ▶</button></div>
 <footer>이 사이트는 창작 설정 소개 페이지입니다. 모든 인물과 사건은 허구입니다.</footer>
+<script src="pager.js"></script>
 </body>
 </html>
